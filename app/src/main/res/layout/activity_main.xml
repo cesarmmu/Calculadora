@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:id="@+id/txtResultado"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/uno"
+            android:onClick="Pulsar"
+            android:layout_below="@+id/resultado"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/resultado" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/dos"
+            android:onClick="Pulsar"
+            android:layout_alignTop="@+id/uno"
+            android:layout_alignEnd="@+id/seis" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/tres"
+            android:layout_alignTop="@+id/dos"
+            android:layout_toEndOf="@+id/dos" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/cuatro"
+            android:layout_alignTop="@+id/tres"
+            android:layout_toEndOf="@+id/tres" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/cinco"
+            android:layout_below="@+id/uno"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/seis"
+            android:layout_below="@+id/dos"
+            android:layout_toEndOf="@+id/uno" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/siete"
+            android:layout_below="@+id/tres"
+            android:layout_alignStart="@+id/tres" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:id="@+id/ocho"
+            android:layout_below="@+id/tres"
+            android:layout_toEndOf="@+id/siete" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:id="@+id/nueve"
+            android:layout_below="@+id/cinco"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/cero"
+            android:layout_alignTop="@+id/nueve"
+            android:layout_toEndOf="@+id/nueve" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/sumar"
+            android:layout_below="@+id/siete"
+            android:layout_toEndOf="@+id/cero" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/restar"
+            android:layout_below="@+id/ocho"
+            android:layout_toEndOf="@+id/sumar" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:id="@+id/total"
+            android:onClick="PulsarOperacion" />
+    </LinearLayout>
+</LinearLayout>
